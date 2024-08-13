@@ -1,0 +1,1 @@
+SELECT id_vendedor, nome, salario from VENDEDORES WHERE salario>(SELECT AVG(salario) from VENDEDORES) ORDER BY salario DESC;
